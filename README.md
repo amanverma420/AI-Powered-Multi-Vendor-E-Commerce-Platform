@@ -140,38 +140,38 @@ src/
 
 ### Home / User Dashboard
 ![Home Page](./images/1st.png) 
-(./images/2.png) 
-(./images/3.png) 
+![Home Page](./images/2.png) 
+![Home Page](./images/3.png) 
 
 ### Product Listing & Category Browse
-(./images/3.png) 
+![Product Page](./images/3.png) 
 
 ### Product Detail Page
-(./images/4.png) 
+![Product details](./images/4.png) 
 
 ### Cart & Checkout
-(./images/5.png) 
-(./images/6.png) 
-(./images/7.png) 
+![Cart Page](./images/5.png) 
+![Cart Page](./images/6.png) 
+![Cart Page](./images/7.png) 
 
 ### Order Tracking
-(./images/7.png) 
-(./images/8.png) 
+![Order Page](./images/7.png) 
+![Order Page](./images/8.png) 
 
 ### Vendor Dashboard
-(./images/9.png) 
-(./images/10.png) 
+![Vendor Page](./images/9.png) 
+![Vendor Page](./images/10.png) 
 
 ### Admin Dashboard
-(./images/11.png) 
-(./images/12.png) 
-(./images/13.png) 
-(./images/14.png) 
+![Admin Page](./images/11.png) 
+![Admin Page](./images/12.png) 
+![Admin Page](./images/13.png) 
+![Admin Page](./images/14.png) 
 
 
 ### Chat / Support
-(./images/15.png) 
-(./images/16.png) 
+![Chat Page](./images/15.png) 
+![Chat Page](./images/16.png) 
 
 ## Getting Started
 
