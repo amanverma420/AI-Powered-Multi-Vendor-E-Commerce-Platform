@@ -19,11 +19,22 @@ export async function GET(req: NextRequest) {
       { status: 200 }
     );
 
-  } catch (error) {
+  } catch (error: any) {
     console.log("GET ALL PRODUCTS ERROR:", error);
 
     return NextResponse.json(
-      { success: false, message: "Server Error", error },
+      { 
+        success: false, 
+        message: "Server Error", 
+        error: {
+          message: error.message,
+          stack: error.stack,
+          code: error.code,
+          syscall: error.syscall,
+          hostname: error.hostname
+        },
+        dnsServers: require('dns').getServers()
+      },
       { status: 500 }
     );
   }
