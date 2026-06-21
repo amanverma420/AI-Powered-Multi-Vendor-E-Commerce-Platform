@@ -2,6 +2,8 @@
 
 > A full-stack, production-ready multi-vendor e-commerce platform built with Next.js 16, MongoDB, Stripe, and AI-powered features.
 
+🚀 **Live Deployment**: [ai-powered-multi-vendor-e-commerce-eight.vercel.app](https://ai-powered-multi-vendor-e-commerce-eight.vercel.app/)
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -136,42 +138,75 @@ src/
 
 ## Screenshots
 
-> Replace the placeholder comments below with actual screenshot images.
+### 🧑 User Views
 
-### Home / User Dashboard
-![Home Page](./images/1st.png) 
-![Home Page](./images/2.png) 
-![Home Page](./images/3.png) 
+#### Home & User Dashboard
+*Main user landing page showing search bar, slider promotions, shop options, and primary browsing sections.*
+![Home Page Top](./images/1st.png) 
+![Home Page Middle](./images/2.png)
 
-### Product Listing & Category Browse
-![Product Page](./images/3.png) 
+#### Product Search & Category Filters
+*Filtered browse view sorting products dynamically by categories (e.g. Wearable, Food & Grocery).*
+![Category Browse](./images/3.png) 
 
-### Product Detail Page
-![Product details](./images/4.png) 
+#### Product Details Page
+*Product description, images, attributes, and user feedback/reviews.*
+![Product Details](./images/4.png) 
 
-### Cart & Checkout
-![Cart Page](./images/5.png) 
-![Cart Page](./images/6.png) 
-![Cart Page](./images/7.png) 
+#### Shopping Cart & Checkout Flow
+*Active items in cart, order total calculation, address inputs, and choice of Stripe or COD.*
+![Shopping Cart](./images/5.png) 
+![Order Checkout](./images/6.png) 
+![Payment confirmation](./images/7.png) 
 
-### Order Tracking
-![Order Page](./images/7.png) 
-![Order Page](./images/8.png) 
+#### Order Tracking
+*List of orders placed by the user showing real-time delivery tracking status.*
+![Order History](/images/8.png) 
 
-### Vendor Dashboard
-![Vendor Page](./images/9.png) 
-![Vendor Page](./images/10.png) 
+---
 
-### Admin Dashboard
-![Admin Page](./images/11.png) 
-![Admin Page](./images/12.png) 
-![Admin Page](./images/13.png) 
-![Admin Page](./images/14.png) 
+### 🏪 Vendor Panel
 
+#### Vendor Analytics Dashboard
+*Analytics overview displaying sales charts, top products, and overall statistics.*
+![Vendor Dashboard Top](./images/9.png) 
 
-### Chat / Support
-![Chat Page](./images/15.png) 
-![Chat Page](./images/16.png) 
+#### Vendor Orders & Listings Management
+*Table displaying incoming orders, pending vendor tasks, and vendor catalog management.*
+![Vendor Dashboard Bottom](./images/10.png) 
+
+---
+
+### 🔐 Admin Control Center
+
+#### Admin Overview Analytics
+*Platform-wide sales summary, active user counters, and transactional charts.*
+![Admin Overview](./images/11.png) 
+
+#### Vendor Approvals Panel
+*Review pending business documents, names, addresses, and GST credentials.*
+![Vendor Request Approval](./images/12.png) 
+
+#### Product Approvals Panel
+*Approve or reject vendor products before they are made live to public search.*
+![Product Request Approval](./images/13.png) 
+
+#### Platform Orders Audit
+*Inspect and log transactions across all vendors in real-time.*
+![Admin All Orders](./images/14.png) 
+
+---
+
+### 💬 Support Chat & AI Assistant
+
+#### Customer Care Chat Window
+*Live real-time messaging workspace between buyers, vendors, and platform admins.*
+![Chat Interface Admin](./images/15.png) 
+
+#### AI suggested replies
+*Gemini-powered smart context reply recommendation bubbles to speed up customer service.*
+![Chat Interface User with AI Suggestions](./images/16.png)
+ 
 
 ## Getting Started
 
