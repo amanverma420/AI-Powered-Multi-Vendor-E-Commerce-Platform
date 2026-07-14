@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import { IProduct } from "./product.model";
+import "./product.model";
+import "./order.model";
 
  export interface IUser {
   _id?: mongoose.Types.ObjectId;

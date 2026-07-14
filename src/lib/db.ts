@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
 
 
-const mongoDbUrl = process.env.MONGODB_URL
-if(!mongoDbUrl){
-    throw new Error("DB Error") 
-}
-
 let cached = global.mongoose
 
 if(!cached){
@@ -15,6 +10,10 @@ if(!cached){
 const connectDb = async ()=>{
     if(cached.conn){
         return cached.conn
+    }
+    const mongoDbUrl = process.env.MONGODB_URL
+    if(!mongoDbUrl){
+        throw new Error("DB Error: MONGODB_URL environment variable is not defined.") 
     }
     if(!cached.promise){
         cached.promise = mongoose.connect(mongoDbUrl).then((conn)=>conn.connection)

@@ -20,18 +20,25 @@ export default function SignupPage() {
 
   const handleSignup =async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!role) {
+      alert("Please select an account type first!");
+      setStep(1);
+      return;
+    }
     setLoading(true)
    try {
-    const result = await axios.post("/api/auth/register",{name , email , password})
+    const result = await axios.post("/api/auth/register",{name , email , password, role})
     console.log(result.data)
     setLoading(false)
     setName("")
     setEmail("")
     setPassword("")
     router.push("/login")
-   } catch (error) {
+   } catch (error: any) {
     console.log(error)
     setLoading(false)
+    const errMsg = error.response?.data?.message || "Registration failed. Please try again.";
+    alert(errMsg);
    }
 
     
@@ -65,9 +72,14 @@ export default function SignupPage() {
       ].map((item) => (
         <motion.div
           key={item.value}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="p-4 bg-white/5 hover:bg-white/20 cursor-pointer rounded-xl border border-white/30 shadow-lg flex flex-col items-center transition"
+          onClick={() => setRole(item.value as any)}
+          className={`p-4 cursor-pointer rounded-xl border shadow-lg flex flex-col items-center transition ${
+            role === item.value 
+              ? "bg-blue-500/20 border-blue-400 text-blue-400" 
+              : "bg-white/5 border-white/20 hover:bg-white/10 text-white"
+          }`}
         >
           <span className="text-4xl mb-2">{item.icon}</span>
           <span className="text-sm font-medium">{item.label}</span>
@@ -76,7 +88,13 @@ export default function SignupPage() {
     </div>
 
     <button
-      onClick={() => setStep(2)}
+      onClick={() => {
+        if (!role) {
+          alert("Please select an account type first!");
+          return;
+        }
+        setStep(2);
+      }}
       className="mt-4 px-8 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-medium"
     >
       Next ➤
